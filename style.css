@@ -35,7 +35,7 @@ body{
     box-shadow:0px 0px 0px 2px black inset;
 }
 .agenda__container{
-    background: linear-gradient(#ebf4f5, #b5c6e0);
+    background: linear-gradient(#c7dfe2, #a5bbdb);
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -51,7 +51,7 @@ body{
 .dia{
     width: 100px;
     border: solid 1px white;
-    color: #9bafd9;
+    color: #0d0f13;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,9 +62,8 @@ body{
 }
 .tiempo{
     width: 50px;
-    /*height: 70px;*/
     color: white;
-    background-color: #103783;
+    background-color: #4a4e69;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -95,7 +94,7 @@ body{
     outline: none;
 }
 .deleteBtn:hover{
-    background-color: #eee;
+    background-color: rgb(228, 150, 150);
 }
 .pop-up__container{
     position: absolute;
@@ -154,4 +153,15 @@ body{
     border-radius: 5px;
     justify-content: center;
     align-items: center;
+}
+.porcentajeBtn{
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 10px;
+    background-color: #d7e3fc;
+    border-radius: 2px;
+}
+.porcentajeBtn:hover{
+    background-color: rgb(228, 150, 150);
 }
