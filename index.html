@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <title>Calendario con js</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calendario Semanal</h1>
+        <div class="panel__container">
+            <div class="tareas__container">
+                <div class="nombre_tarea" id="familia" style="background-color: #f7f779;">Familia</div>
+                <div class="nombre_tarea" id="gym" style="background-color: #f68080">Gym</div>
+                <div class="nombre_tarea" id="study" style="background-color: #faae7b">Estudios</div>
+                <div class="nombre_tarea" id="compras" style="background-color: #2a9d8f">Compras</div>
+                <div class="nombre_tarea" id="compromiso" style="background-color: #a8dadc">Compromisos</div>
+                <div class="nombre_tarea" id="trabajo" style="background-color: #bdb2ff">Trabajo</div>
+            </div>
+            <div class="btnAdd" id="agregar" style="background-color: #000;color:#fff">+</div>
+            <div class="panel__container__inputs" id="addContainer">
+                <p>Nombre:</p>
+                <input type="text" id="addName">
+                <p>Color:</p>
+                <input type="color" id="addColor">
+                <input type="button" value="submit" id="addBtn">
+            </div>
+        </div>
+        
+
+        <h3>Selecciona tu actividad y el espacio que ocupará en tu calendario</h3>
+
+        <div class="agenda__container">
+            <div class="dias__container">
+                <span class="corner"></span>
+                <div class="dia">Domingo</div>
+                <div class="dia">Lunes</div>
+                <div class="dia">Martes</div>
+                <div class="dia">Miércoles</div>
+                <div class="dia">Jueves</div>
+                <div class="dia">Viernes</div>
+                <div class="dia">Sábado</div>
+            </div>
+            <div class="division__dia">
+                <span class="tiempo">7am <br> - <br> 9am</span>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+            </div>
+            <div class="division__dia">
+                <span class="tiempo">09 am <br> - <br> 11 am</span>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+            </div>
+            <div class="division__dia">
+                <span class="tiempo">11 am <br> - <br> 01 pm</span>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+            </div>
+            <div class="division__dia">
+                <span class="tiempo">01 pm <br> - <br> 03 pm</span>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+            </div>
+            <div class="division__dia">
+                <span class="tiempo">03 pm <br> - <br> 05 pm</span>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+            </div>
+            <div class="division__dia">
+                <span class="tiempo">05 pm <br> - <br> 07 pm</span>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+            </div>
+        </div>
+
+        <button class="deleteBtn">Limpiar calendario</button>
+        <button class="porcentajeBtn">Mostrar porcentajes</button>
+        <div class="pop-up__container">
+            <div class="pop-up">
+                <h4>¿Estás seguro de que deseas limpiar el calendario?</h4>
+                <div class="btn__container">
+                    <div class="btn__answer" id="btn__yes">Sí</div>
+                    <div class="btn__answer" id="btn__no">No</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="" id="pocertajes"></div>
+    <script src="./main.js"></script>
+</body>
+</html>
